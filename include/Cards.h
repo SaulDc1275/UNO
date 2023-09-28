@@ -48,6 +48,9 @@ public:
 	}
 	bool usada = false;  // Para marcar si la carta se ha "eliminado" de la mano del jugador
 	bool repartida = false;  // Para marcar si la carta se ha repartido
-
+	void assignColor(int cardIndex) {
+		int newColor = (cardIndex / 10) + 1;
+		setColor(newColor);
+	}
 
 };

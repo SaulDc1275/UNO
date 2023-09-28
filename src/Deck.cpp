@@ -13,32 +13,13 @@ Deck::Deck() {
         }
     }
 
-    fillDeck(); // Llena el mazo de cartas con valores y texturas
-    shuffleDeck(); // Mezcla el mazo de cartas
+   
 }
 
 
 
 
-void Deck::shuffleDeck()
-{
-    Cards temp;
-    for (int i = 0; i < 108; ++i) {
-        int random = rand() % 108;
-        temp = principalDeck[i];
-        principalDeck[i] = principalDeck[random];
-        principalDeck[random] = temp;
-    }
-}
 
-void Deck::fillDeck() {
-    int index = 0;
-    for (int number = 0; number <= 9; ++number) {
-        for (int color = 0; color < 4; ++color) {
-            principalDeck[index].setNumber(number);
-            principalDeck[index].setColor(color);
-            principalDeck[index].setTexture(&cardTextures[index]); // Asigna la textura a la carta
-            index++;
-        }
-    }
-}
+
+
+

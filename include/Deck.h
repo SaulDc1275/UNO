@@ -12,8 +12,7 @@ private:
 public:
 	Deck();
 
-	void shuffleDeck();
-	void fillDeck();
-
+	
+	//Esta clase al inicio la cree por la estructura correcta, no la utilicé porque no me servia y no supe como implementarla
 
 };
