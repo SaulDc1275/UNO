@@ -3,7 +3,7 @@
 *.out
 *.app
 *.so
-*.dll
+
 
 # Ignore Visual Studio files and directories
 .vscode/
